@@ -6,28 +6,32 @@ public class BreathingControl : MonoBehaviour {
 	GameObject micController;
 	GameObject dandelion;
 	ParticleSystem particleSystem;
+	bool micInitialized = false;
 
 	// Use this for initialization
 	void Start () {
+		Invoke("InitializeMic", 1);
+	}
+
+	void InitializeMic() {
 		micController = GameObject.Find ("MicController");
 		dandelion = GameObject.Find ("Dandelions_A");
 		particleSystem = dandelion.GetComponent<ParticleSystem>();
 		IncreaseRate ();
-//		var ex = particleSystem.externalForces;
-//		ex.enabled = true;
-//		ex.multiplier = 500f;
-//		Debug.Log ("particleSystem: "+particleSystem.ToString());
+		micInitialized = true;
 	}
 
 	// Update is called once per frame
 	void Update () {
-		var loudness = micController.GetComponent<MicControl>().loudness;
-		Debug.Log ("loudness: "+loudness);
-		if (loudness > 0.05f) {
-			Debug.Log ("loudness > 0.05f");
-			IncreaseRate ();
-		} else {
-			DecreaseRate();
+		if (micInitialized) {
+			var loudness = micController.GetComponent<MicControl> ().loudness;
+			Debug.Log ("loudness: " + loudness);
+			if (loudness > 0.05f) {
+				Debug.Log ("loudness > 0.05f");
+				IncreaseRate ();
+			} else {
+				DecreaseRate ();
+			}
 		}
 	}
 
