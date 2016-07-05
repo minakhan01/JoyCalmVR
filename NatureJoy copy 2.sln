@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{92046234-CB99-4B93-F878-B55AA2BFE6EE}") = "NatureJoy copy 2", "Assembly-CSharp-firstpass.csproj", "{18A0E8EA-717B-2272-E153-D3A69A3FA747}"
+EndProject
+Project("{92046234-CB99-4B93-F878-B55AA2BFE6EE}") = "NatureJoy copy 2", "Assembly-CSharp.csproj", "{5D8F4987-15BE-C74A-F6E8-3D8C8BF57140}"
+EndProject
+Project("{92046234-CB99-4B93-F878-B55AA2BFE6EE}") = "NatureJoy copy 2", "Assembly-CSharp-Editor.csproj", "{7BDF15FE-DEAF-F859-2591-AD6475353F5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18A0E8EA-717B-2272-E153-D3A69A3FA747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18A0E8EA-717B-2272-E153-D3A69A3FA747}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18A0E8EA-717B-2272-E153-D3A69A3FA747}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18A0E8EA-717B-2272-E153-D3A69A3FA747}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D8F4987-15BE-C74A-F6E8-3D8C8BF57140}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D8F4987-15BE-C74A-F6E8-3D8C8BF57140}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D8F4987-15BE-C74A-F6E8-3D8C8BF57140}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D8F4987-15BE-C74A-F6E8-3D8C8BF57140}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BDF15FE-DEAF-F859-2591-AD6475353F5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BDF15FE-DEAF-F859-2591-AD6475353F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BDF15FE-DEAF-F859-2591-AD6475353F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BDF15FE-DEAF-F859-2591-AD6475353F5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
