@@ -13,6 +13,7 @@
 // limitations under the License.
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// This script provides head tracking support for a camera.
 ///
@@ -81,7 +82,12 @@ public class GvrHead : MonoBehaviour {
 
   void Awake() {
     GvrViewer.Create();
+		GvrViewer.Instance.OnBackButton += HandleOnBackButton;
   }
+	void HandleOnBackButton ()
+	{
+		SceneManager.LoadScene("UnderWater Scene_2", LoadSceneMode.Single);        
+	}
 
   private bool updated;
 

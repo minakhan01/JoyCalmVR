@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9FAFADC7-8DBB-73D0-4D4E-3AC0B4B2A339}</ProjectGuid>
+    <ProjectGuid>{8331EAF4-972C-CE58-79CF-BDB220326E0B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -69,13 +69,13 @@
      <None Include="Assets\GoogleVR\Resources\SolidColor.shader" />
      <None Include="Assets\Nature_FX\Shaders\AlphaSelfIllum_Nature.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>/Users/khan32m/git_repos/NatureJoy/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>/Users/khan32m/git_repos/NatureJoy_v1/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="Assembly-UnityScript">
- <HintPath>/Users/khan32m/git_repos/NatureJoy/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ <HintPath>/Users/khan32m/git_repos/NatureJoy_v1/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="Assembly-UnityScript-Editor-firstpass">
- <HintPath>/Users/khan32m/git_repos/NatureJoy/Library/ScriptAssemblies/Assembly-UnityScript-Editor-firstpass.dll</HintPath>
+ <HintPath>/Users/khan32m/git_repos/NatureJoy_v1/Library/ScriptAssemblies/Assembly-UnityScript-Editor-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
@@ -102,7 +102,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
  </Reference>
  <Reference Include="Google.ProtocolBuffers">
- <HintPath>/Users/khan32m/git_repos/NatureJoy/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ <HintPath>/Users/khan32m/git_repos/NatureJoy_v1/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -116,9 +116,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{8D6F8912-00AE-4B27-7B0E-D006677E8C10}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{511BD9CA-B0EB-DAB8-7013-6607CCB65E00}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{DF30B21B-2CFC-7F84-19D1-6D39D67AD61F}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{E47E4CFC-B559-2422-DF24-388430B73E60}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

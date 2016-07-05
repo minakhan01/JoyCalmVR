@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class BreathingControl : MonoBehaviour {
 
@@ -14,7 +15,7 @@ public class BreathingControl : MonoBehaviour {
 	}
 
 	void InitializeMic() {
-		micController = GameObject.Find ("MicController");
+		micController = GameObject.Find ("Listener");
 		dandelion = GameObject.Find ("Dandelions_A");
 		particleSystem = dandelion.GetComponent<ParticleSystem>();
 		IncreaseRate ();
@@ -24,14 +25,18 @@ public class BreathingControl : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (micInitialized) {
-			var loudness = micController.GetComponent<MicControl> ().loudness;
-			Debug.Log ("loudness: " + loudness);
-			if (loudness > 0.05f) {
+//			var loudness = micController.GetComponent<MicControl> ().loudness;
+			var fft = micController.GetComponent<AndroidReceiveData>().fft;
+			Debug.Log ("fft: " + fft);
+			if (fft > -30) {
 				Debug.Log ("loudness > 0.05f");
 				IncreaseRate ();
 			} else {
 				DecreaseRate ();
 			}
+		}
+		if (Input.GetKeyDown (KeyCode.Escape)) {
+			SceneManager.LoadScene("UnderWater Scene_2", LoadSceneMode.Single);
 		}
 	}
 
